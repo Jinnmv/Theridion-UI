@@ -1,0 +1,32 @@
+{
+  "name": "Theridion-UI",
+  "description": "HTML5 client for Theridion - Ukrainia Scale Models Crowler",
+  "main": "",
+  "authors": [
+    "Anton Savenko <anton.a.savenko@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "html5",
+    "html"
+  ],
+  "homepage": "https://github.com/Jinnmv/Theridion-UI",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "backbone": "~1.2.3"
+  }
+}

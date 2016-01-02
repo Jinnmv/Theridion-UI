@@ -1,0 +1,17 @@
+{
+  "name": "Theridion-UI",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "gulp": "^3.9.0",
+    "gulp-copy": "0.0.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "bower update --unsafe-perm",
+    "start": "grunt"
+  }
+}
