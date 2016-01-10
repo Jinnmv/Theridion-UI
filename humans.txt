@@ -1,8 +1,17 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
-/* humanstxt.org */
+
+/* TEAM */
+    Author/Developer: Anton Savenko
+    Contact: anton [dot] a [dot] savenko [at] gmail.com
+    Twitter: none
+    From: Dnipropetrovs'k, Ukraine
+
+/* THANKS */
+
+  humanstxt.org
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: jQuery, Orbit, Reveal
-  Software: Sublime, Git, Sass
+    Last update: 2016/01/02
+    Language: English / Russian / Ukrainian
+    Standards:  HTML5, CSS3
+    Components: jQuery, normalize.css, Backbone.js
+    Software and Tools: Atom, Git, Sass
