@@ -1,0 +1,55 @@
+// ==========================================================================
+// Base – Mixins
+// ==========================================================================
+
+// Font sizes (primary sizing in `rem` units with a fallback of `px`)
+// Example usage .font-size(18);
+
+@mixin font-size ($size) {
+  $rem-value: $size / 16;
+  $px-value: ($size);
+  font-size: $px-value + px;
+  font-size: $rem-value + rem;
+}
+
+
+// Line height sizes (primary sizing in `rem` units with a fallback of `px`)
+// Example usage .line-height(22);
+@mixin line-height ($size) {
+  $rem-value: $size / 16;
+  $px-value: ($size);
+  line-height: $px-value + px;
+  line-height: $rem-value + rem;
+}
+
+
+//@mixin text-size-adjust($size) {
+//    -ms-text-size-adjust: $size;
+//    -webkit-text-size-adjust: $size;
+//}
+
+
+// Animations
+// Example Usage .animation(1s);
+@mixin animate($duration: 1s) {
+  animation-duration: $duration;
+  animation-fill-mode: both;
+}
+
+// Animation Delay
+// Example Usage .animation-delay(1s)
+@mixin animate-delay($delay: 1s) {
+  animation-delay: $delay;
+}
+
+// CSS Transitions
+// Example Usage .transition(0.3s)
+@mixin transition($speed: 0.3s) {
+   transition: all $speed;
+}
+
+// Transition Delay
+// Example usage .transition-delay(.3s)
+@mixin transition-delay($speed: 0.3s) {
+  transition-delay: $speed;
+}

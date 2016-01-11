@@ -1,0 +1,272 @@
+// ==========================================================================
+// Layout: Default
+// ==========================================================================
+
+
+
+.prod-name {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.prod-image {
+  padding: .25em;
+
+  > img {
+    border: 1px solid $color-black;
+    max-height: 3em;
+  }
+}
+
+.prod-desc {
+  flex: 1 1 auto;
+  padding: .25em;
+}
+
+
+
+.prod-desc-additional {
+  font-size: .8em;
+
+  > dd {
+    margin-right: 1em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.prod-manuf {
+  flex: 1 1 auto;
+  font-weight: 600;
+}
+
+.prod-prices {
+  height: 3em;
+  width: 5em;
+}
+
+.prod-price-main {
+  font-size: 1.5em;
+}
+
+.currency::before {
+  content: '\20B4';
+}
+
+.product dt::after {
+  content: ':';
+}
+
+.prod-scale::before {
+  content: '1:';
+}
+
+.prod-price-low::after {
+  content: '\2004\2013\2004';
+}
+
+.prod-price-low,
+.prod-price-high {
+  margin-top: .1em;
+}
+
+.shop-link {
+  flex: 1 1 auto;
+}
+
+.shop-product-image > img {
+  max-height: 2em;
+}
+
+.prod-shops a {
+  text-decoration: none;
+}
+
+.shop-product-name {
+  color: $color-black;
+  text-decoration: none;
+}
+
+
+.header {
+  display: none;
+
+  h1 {
+    background-color: #ffcb7d;
+    font-size: 1.5em;
+    line-height: 2;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+
+.searchbar {
+  display: flex;
+  flex: 0 0 auto;
+
+  input[type="search"] {
+    flex: 1;
+    font-size: 1.5em;
+  }
+}
+
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container,
+.main {
+  height: 100%;
+  min-height: 100%;
+}
+
+.main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  // padding: 1em;
+  position: absolute;
+  width: 100%;
+}
+
+.goods {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  padding: 1em;
+}
+
+// off-canvas
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: block;
+  margin: auto;
+}
+
+.sidebar-menu,
+.filter {
+
+  /*
+    This is a trick to improve performance on newer versions of Chrome
+    #perfmatters
+  */
+  //-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  background-color: #4ba3ff;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+  padding: 1em;
+  position: absolute;
+  //-webkit-transition: -webkit-transform .4s ease-out;
+  transition: transform .4s ease-out;
+
+  width: 17em;
+
+  z-index: 1;
+
+  h4,
+  h5 {
+    margin: .5em 0;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1em;
+  }
+}
+
+
+.sidebar-menu {
+  /*
+  Using translate3d as a trick to improve performance on older versions of Chrome
+  See: http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
+  #perfmatters
+  */
+  //-webkit-transform: translate(-250px, 0);
+  transform: translate(-17em, 0);
+
+  &.open {
+    //-webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+
+.filter {
+  left: 100%;
+
+  &.open {
+    //-webkit-transform: translate(-250px, 0);
+    transform: translate(-17em, 0);
+  }
+}
+
+
+@media (min-width: 500px) {
+  /* If the screen is wider then 500px, use Flexbox */
+  .container {
+    display: flex;
+
+    flex-flow: row nowrap;
+    max-width: 960px;
+  }
+
+  .sidebar-menu {
+    position: relative;
+
+    transform: translate(0, 0);
+    transition: none 0s ease-out;
+  }
+
+  .main {
+    position: static;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .toggle-sidebar,
+  .sidebar-close-btn {
+    display: none;
+  }
+
+  // .toggle-filter {
+  //   display: block;
+  // }
+
+}
+
+@media (min-width: 800px) {
+
+  body {
+    overflow-x: auto;
+  }
+
+  .toggle-filter,
+  .filter-close-btn {
+    display: none;
+  }
+
+  .filter {
+    left: auto;
+    position: relative;
+
+    //-webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    //-webkit-transition: none 0s ease-out;
+    transition: none 0s ease-out;
+  }
+}

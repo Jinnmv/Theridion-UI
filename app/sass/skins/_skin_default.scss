@@ -1,0 +1,140 @@
+// ==========================================================================
+// Skin: Default
+// ==========================================================================
+
+// Variables
+// ==========================================================================
+
+// Web Safe Fonts (http://www.cssfontstack.com/)
+// --------------------------------------------------------------------------
+// Sans Serif
+$base-font-family-century-gothic:               "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+$base-font-family-futura:                       Futura, "Trebuchet MS", Arial, sans-serif;
+$base-font-family-helvetica:                    "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Slab Serif
+$base-font-family-rockwell:                     Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+
+// Serif
+$base-font-family-baskerville:                  Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$base-font-family-didot:                        Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+$base-font-family-garamond:                     Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+
+
+// Font Weights
+// --------------------------------------------------------------------------
+$font-100:                                      100;
+$font-200:                                      200;
+$font-300:                                      300;
+$font-400:                                      400;
+$font-500:                                      500;
+$font-600:                                      600;
+$font-700:                                      700;
+$font-800:                                      800;
+$font-900:                                      900;
+
+// Headings
+// --------------------------------------------------------------------------
+//$heading-font-family:                           sans-serif;
+$h1-font-size:                                  32;
+$h1-line-height:                                38;
+$h1-font-weight:                                $font-400;
+$h1-color:                                      #343434;
+$h2-font-size:                                  26;
+$h2-line-height:                                32;
+$h2-font-weight:                                $font-400;
+$h2-color:                                      #343434;
+$h3-font-size:                                  22;
+$h3-line-height:                                28;
+$h3-font-weight:                                $font-400;
+$h3-color:                                      #343434;
+$h4-font-size:                                  18;
+$h4-line-height:                                24;
+$h4-font-weight:                                $font-400;
+$h4-color:                                      #343434;
+$h5-font-size:                                  16;
+$h5-line-height:                                22;
+$h5-font-weight:                                $font-400;
+$h5-color:                                      #343434;
+$h6-font-size:                                  14;
+$h6-line-height:                                20;
+$h6-font-weight:                                $font-400;
+$h6-color:                                      #343434;
+
+
+// Global Styles
+// ==========================================================================
+
+// Headings
+// --------------------------------------------------------------------------
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $heading-font-family;
+//   margin: 0;
+// }
+//
+// h1 {
+//   @include font-size($h1-font-size);
+//   @include line-height($h1-line-height);
+//   color: $h1-color;
+//   font-weight: $h1-font-weight;
+//   margin-bottom: .5em;
+//   margin-top: .7em;
+// }
+//
+// h2 {
+//   @include font-size($h2-font-size);
+//   @include line-height($h2-line-height);
+//   color: $h2-color;
+//   font-weight: $h2-font-weight;
+//   margin-bottom: .2em;
+//   margin-top: 1.4em;
+// }
+//
+// h3 {
+//   @include font-size($h3-font-size);
+//   @include line-height($h3-line-height);
+//   color: $h3-color;
+//   font-weight: $h3-font-weight;
+//   margin-bottom: .2em;
+//   margin-top: 1em;
+// }
+//
+// h4 {
+//   @include font-size($h4-font-size);
+//   @include line-height($h4-line-height);
+//   color: $h4-color;
+//   font-weight: $h4-font-weight;
+//   margin-bottom: .2em;
+//   margin-top: 1em;
+// }
+//
+// h5 {
+//   @include font-size($h5-font-size);
+//   @include line-height($h5-line-height);
+//   color: $h5-color;
+//   font-weight: $h5-font-weight;
+//   margin-bottom: .1em;
+//   margin-top: 1em;
+// }
+//
+// h6 {
+//   @include font-size($h6-font-size);
+//   @include line-height($h6-line-height);
+//   color: $h6-color;
+//   font-weight: $h6-font-weight;
+//   margin-bottom: .1em;
+//   margin-top: 1em;
+// }
+
+.sidebar-menu,
+.filter {
+  h4,
+  h5 {
+    text-transform: uppercase;
+  }
+}
